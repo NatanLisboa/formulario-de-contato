@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #181718;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.form {
+    width: 40%;
+}
+
+.form__fieldset {
+    background-color: #0F1011;
+    padding: 16px;
+    border: none;
+}
+
+.form__fieldset__title {
+    color: #858B90;
+    text-align: center;
+}
+
+.form__fieldset__label {
+    display: block;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.form__fieldset__input {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    background-color: #0B0A0C;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.form__fieldset__input:focus {
+    background-color: #2B282A;
+}
+
+.form__fieldset__input:focus.form__fieldset__input:valid, .form__fieldset__input:focus.form__fieldset__input:invalid {
+    outline: none;
+} 
+
+.form__fieldset__input:focus.form__fieldset__input:valid {
+    border-bottom: 2px solid green;
+}
+
+.form__fieldset__input:focus.form__fieldset__input:invalid, .form__fieldset__input:focus.form__fieldset__input {
+    border-bottom: 2px solid red;
+}
+
+.form__fieldset__input {
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.form__fieldset textarea {
+    resize: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.form__fieldset__field-description {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.form__fieldset__submit-btn {
+    float: right;
+    padding: 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: white;
+    background-color: #2B282A;
+    border: none;
+}
+
